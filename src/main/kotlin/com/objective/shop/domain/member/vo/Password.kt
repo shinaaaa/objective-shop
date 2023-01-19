@@ -1,7 +1,7 @@
 package com.objective.shop.domain.member.vo
 
 @JvmInline
-value class Password(val value: String) {
+value class Password private constructor(val value: String) {
 
     companion object {
         fun of(value: String): Password {

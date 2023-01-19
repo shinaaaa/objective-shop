@@ -1,7 +1,7 @@
 package com.objective.shop.domain.member.vo
 
 @JvmInline
-value class Balance(val value: Int) {
+value class Balance private constructor(val value: Int) {
 
     companion object {
         fun of(value: Int): Balance {
